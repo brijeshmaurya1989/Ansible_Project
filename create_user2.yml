@@ -1,0 +1,9 @@
+---
+- name: write a playbook to create a user on client machine 
+  hosts: all
+  vars:
+     users: mandar
+  tasks: 
+    - name: task to create user 
+      user: 
+        name: "{{users}}"
